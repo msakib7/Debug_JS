@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Local Storage Practice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <!-- form section -->
+    <section class="container mt-2 bg-info rounded-2">
+        <h1 class="text-center">Registration form</h1>
+          <div class="mt-2">
+            <input type="text" id="userName" class="w-100 rounded-2 p-2" placeholder="Name">
+        </div>
+          <div class="mt-2">
+            <input type="text" id="userInstitute" class="w-100 rounded-2 p-2"  placeholder="Institute">
+        </div>
+          <div class="mt-2">
+            <input type="text" id="userDepartment" class="w-100 rounded-2 p-2"  placeholder="Department">
+        </div>
+          <div class="row mt-2 bg-info ">
+            <div class="col row-cols-3">
+                <input type="text" id="userIntake" class="w-100 rounded-2 p-2"  placeholder="Intake">
+            </div>
+            <div class="col row-cols-3">
+                <input type="text" id="userSection" class="w-100 rounded-2 p-2" placeholder="Section">
+            </div>
+            <div class="col row-cols-3">
+                <input type="text" id="userRoll" class="w-100 rounded-2 p-2" placeholder="Roll">
+            </div>
+        </div>
+        <div class="mt-2">
+            <input type="email" id="userEmail" class="w-100 rounded-2 p-2"  placeholder="any@email.com">
+        </div>
+        <div class="mt-2 mb-2 text-center">
+            <button onclick="saveData()" class="btn btn-warning">Save Data</button>
+        </div>
+    </section>
+
+    <!-- display Section -->
+    <section class="container mt-2 bg-info-subtle rounded-2">
+        <div id="user-list">
+
+        </div>
+    </section>
+
+
+    <!-- script -->
+
+    <script src="js/level-1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
